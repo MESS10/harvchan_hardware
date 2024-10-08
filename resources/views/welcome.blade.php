@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Molla - Bootstrap eCommerce Template</title>
+    <title>Harvchan Hardware</title>
     <meta name="keywords" content="HTML5 Template">
-    <meta name="description" content="Molla - Bootstrap eCommerce Template">
+    <meta name="description" content="Harvchan Hardware">
     <meta name="author" content="p-themes">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/vendor//vendor/assets/images/icons/apple-touch-icon.png">
@@ -63,11 +63,11 @@
                         <li>
                             <a href="#">Links</a>
                             <ul>
-                                <li><a href="tel:#"><i class="icon-phone"></i>Call: +0123 456 789</a></li>
+                                <li><a href="tel:#"><i class="icon-phone"></i>Call: +263 772 924 550</a></li>
                                 <li><a href="wishlist.html"><i class="icon-heart-o"></i>Wishlist <span>(3)</span></a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#signin-modal" data-toggle="modal"><i class="icon-user"></i>Login</a></li>
+                                 <!--<li><a href="#signin-modal" data-toggle="modal"><i class="icon-user"></i>Login</a></li>-->
                             </ul>
                         </li>
                     </ul><!-- End .top-menu -->
@@ -83,14 +83,14 @@
                         <i class="icon-bars"></i>
                     </button>
 
-                    <a href="index.html" class="logo">
+                    <a href="index-7.html" class="logo">
                         <img src="/vendor/assets/images/logoh.png" alt="Molla Logo" width="105" height="25">
                     </a>
 
                     <nav class="main-nav">
                         <ul class="menu sf-arrows">
                             <li class="megamenu-container active">
-                                <a href="index.html" class="sf-with-ul">Home</a>
+                                <a href="index-7.html" class="sf-with-ul">Home</a>
 
                                 <div class="megamenu demo">
                                     <div class="menu-col">
@@ -566,7 +566,7 @@
         <nav aria-label="breadcrumb" class="breadcrumb-nav">
             <div class="container">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index-7.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="elements-list.html">Elements</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Banners</li>
                 </ol>
@@ -666,7 +666,7 @@
         <nav class="mobile-nav">
             <ul class="mobile-menu">
                 <li class="active">
-                    <a href="index.html">Home</a>
+                    <a href="index-7.html">Home</a>
 
                     <ul>
                         <li><a href="index-1.html">01 - furniture store</a></li>
