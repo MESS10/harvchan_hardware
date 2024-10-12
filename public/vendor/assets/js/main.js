@@ -145,19 +145,19 @@ $(document).ready(function () {
 
     // Product hover
     if ( $.fn.hoverIntent ) {
-        $('.product-3').hoverIntent(function () {
+        $('./template/product-3').hoverIntent(function () {
             var $this = $(this),
-                animDiff = ( $this.outerHeight() - ( $this.find('.product-body').outerHeight() + $this.find('.product-media').outerHeight()) ),
-                animDistance = ( $this.find('.product-footer').outerHeight() - animDiff );
+                animDiff = ( $this.outerHeight() - ( $this.find('./template/product-body').outerHeight() + $this.find('./template/product-media').outerHeight()) ),
+                animDistance = ( $this.find('./template/product-footer').outerHeight() - animDiff );
 
-            $this.find('.product-footer').css({ 'visibility': 'visible', 'transform': 'translateY(0)' });
-            $this.find('.product-body').css('transform', 'translateY('+ -animDistance +'px)');
+            $this.find('./template/product-footer').css({ 'visibility': 'visible', 'transform': 'translateY(0)' });
+            $this.find('./template/product-body').css('transform', 'translateY('+ -animDistance +'px)');
 
         }, function () {
             var $this = $(this);
 
-            $this.find('.product-footer').css({ 'visibility': 'hidden', 'transform': 'translateY(100%)' });
-            $this.find('.product-body').css('transform', 'translateY(0)');
+            $this.find('./template/product-footer').css({ 'visibility': 'hidden', 'transform': 'translateY(100%)' });
+            $this.find('./template/product-body').css('transform', 'translateY(0)');
         });
     }
 
@@ -193,7 +193,7 @@ $(document).ready(function () {
 
 	// Product countdown
 	if ( $.fn.countdown ) {
-		$('.product-countdown').each(function () {
+		$('./template/product-countdown').each(function () {
 			var $this = $(this), 
 				untilDate = $this.data('until'),
 				compact = $this.data('compact'),
@@ -229,7 +229,7 @@ $(document).ready(function () {
 		});
 
 		// Pause
-		// $('.product-countdown').countdown('pause');
+		// $('./template/product-countdown').countdown('pause');
 	}
 
 	// Quantity Input - Cart page - Product Details pages
@@ -288,8 +288,8 @@ $(document).ready(function () {
 
     // Product Image Zoom plugin - product pages
     if ( $.fn.elevateZoom ) {
-        $('#product-zoom').elevateZoom({
-            gallery:'product-zoom-gallery',
+        $('#/template/product-zoom').elevateZoom({
+            gallery:'/template/product-zoom-gallery',
             galleryActiveClass: 'active',
             zoomType: "inner",
             cursor: "crosshair",
@@ -299,17 +299,17 @@ $(document).ready(function () {
         });
 
         // On click change thumbs active item
-        $('.product-gallery-item').on('click', function (e) {
-            $('#product-zoom-gallery').find('a').removeClass('active');
+        $('./template/product-gallery-item').on('click', function (e) {
+            $('#/template/product-zoom-gallery').find('a').removeClass('active');
             $(this).addClass('active');
 
             e.preventDefault();
         });
 
-        var ez = $('#product-zoom').data('elevateZoom');
+        var ez = $('#/template/product-zoom').data('elevateZoom');
 
         // Open popup - product images
-        $('#btn-product-gallery').on('click', function (e) {
+        $('#btn-/template/product-gallery').on('click', function (e) {
             if ( $.fn.magnificPopup ) {
                 $.magnificPopup.open({
                     items: ez.getGalleryList(),
@@ -327,9 +327,9 @@ $(document).ready(function () {
         });
     }
 
-    // Product Gallery - product-gallery.html 
+    // Product Gallery - /template/product-gallery.html 
     if ( $.fn.owlCarousel && $.fn.elevateZoom ) {
-        var owlProductGallery = $('.product-gallery-carousel');
+        var owlProductGallery = $('./template/product-gallery-carousel');
 
         owlProductGallery.on('initialized.owl.carousel', function () {
             owlProductGallery.find('.active img').elevateZoom({
@@ -382,9 +382,9 @@ $(document).ready(function () {
         });
     }
 
-     // Product Gallery Separeted- product-sticky.html 
+     // Product Gallery Separeted- /template/product-sticky.html 
     if ( $.fn.elevateZoom ) {
-        $('.product-separated-item').find('img').elevateZoom({
+        $('./template/product-separated-item').find('img').elevateZoom({
             zoomType: "inner",
             cursor: "crosshair",
             zoomWindowFadeIn: 400,
@@ -394,7 +394,7 @@ $(document).ready(function () {
 
         // Create Array for gallery popup
         var galleryArr = [];
-        $('.product-gallery-separated').find('img').each(function () {
+        $('./template/product-gallery-separated').find('img').each(function () {
             var $this = $(this),
                 imgSrc = $this.attr('src'),
                 imgTitle= $this.attr('alt'),
@@ -495,18 +495,18 @@ $(document).ready(function () {
             isotopeFilter( '.entry-filter',  '.entry-container'); //filterNav - .container
         });
 
-        // Product masonry product-masonry.html
-        $('.product-gallery-masonry').imagesLoaded(function () {
+        // Product masonry /template/product-masonry.html
+        $('./template/product-gallery-masonry').imagesLoaded(function () {
             // Products Grid/Masonry
-            layoutInit( '.product-gallery-masonry', '.product-gallery-item' ); // container - selector
+            layoutInit( './template/product-gallery-masonry', './template/product-gallery-item' ); // container - selector
         });
 
         // Products - Demo 11
         $('.products-container').imagesLoaded(function () {
             // Products Grid/Masonry
-            layoutInit( '.products-container', '.product-item' ); // container - selector
+            layoutInit( '.products-container', './template/product-item' ); // container - selector
             // Product Filter
-            isotopeFilter( '.product-filter',  '.products-container'); //filterNav - .container
+            isotopeFilter( './template/product-filter',  '.products-container'); //filterNav - .container
         });
     }
 
@@ -557,8 +557,8 @@ $(document).ready(function () {
         var target = $(this).attr('href'),
             $target = $(target);
 
-        if ( $('#product-accordion-review').length ) {
-            $('#product-accordion-review').collapse('show');
+        if ( $('#/template/product-accordion-review').length ) {
+            $('#/template/product-accordion-review').collapse('show');
         }
 
         if ($target.length) {
